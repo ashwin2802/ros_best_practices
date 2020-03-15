@@ -5,8 +5,7 @@ namespace ros_package_template {
 /*!
  * Class containing the algorithmic part of the package.
  */
-class Algorithm
-{
+class Algorithm {
  public:
   /*!
    * Constructor.

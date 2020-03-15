@@ -12,8 +12,7 @@ namespace ros_package_template {
 /*!
  * Main class for the node to handle the ROS interfacing.
  */
-class RosPackageTemplate
-{
+class RosPackageTemplate {
  public:
   /*!
    * Constructor.

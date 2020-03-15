@@ -8,15 +8,13 @@
 
 using namespace ros_package_template;
 
-TEST(Algorithm, getWithoutSet)
-{
+TEST(Algorithm, getWithoutSet) {
   Algorithm algorithm;
   const double average = algorithm.getAverage();
   EXPECT_EQ(0.0, average);
 }
 
-TEST(Algorithm, singleDataPoint)
-{
+TEST(Algorithm, singleDataPoint) {
   const double inputData = 100.0 * (double)rand() / RAND_MAX;
   Algorithm algorithm;
   algorithm.addData(inputData);
@@ -24,8 +22,7 @@ TEST(Algorithm, singleDataPoint)
   EXPECT_NEAR(inputData, average, 1e-10);
 }
 
-TEST(Algorithm, multipleDataPoints)
-{
+TEST(Algorithm, multipleDataPoints) {
   size_t nMeasurements = 100;
   std::vector<double> inputData(nMeasurements);
   double sum = 0.0;
