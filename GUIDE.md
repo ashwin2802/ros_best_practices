@@ -44,15 +44,7 @@ Every source and header file must contain a license and copyright statement at t
 
 ## 4. Include guards
 
-All headers must be protected against multiple inclusion by #ifndef guards, e.g.:
-
-```cpp
-#ifndef PACKAGE_PATH_FILE_H
-#define PACKAGE_PATH_FILE_H
-...
-#endif
-```
-Alternative shorthand:
+All headers must be protected against multiple inclusion by guards, e.g.:
 
 ```cpp
 #pragma once
