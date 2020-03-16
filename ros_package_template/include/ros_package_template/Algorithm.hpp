@@ -35,7 +35,7 @@ class Algorithm {
   double average_;
 
   //! Number of measurements taken.
-  unsigned int nMeasurements_;
+  unsigned int n_measurements_;
 };
 
 } /* namespace */
